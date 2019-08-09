@@ -11,6 +11,29 @@ int main () {
 	printf ( "Summ is %d\n", i1 + i2 + i3);
 	printf ( "Product is %d\n", i1*i2*i3);
 	
+	if (i1 > i2) {
+	   if (i2 > i3) {
+	   printf ( "Biggest is %d\n" , i1);	
+	   printf ( "Smallest is %d\n" , i3);	
+   	}	
+	}
+	
+	if (i2 > i3) {
+	   if (i3 > i1) {
+	   printf ("Biggest is %d\n" , i2);
+	   printf ("Smallest is %d\n" , i1);	
+	   }
+	}
+	 	
+	 if (i3 > i1) {
+	    if (i1 > i2) {
+	    printf ("Biggest is %d\n" , i3);
+	    printf ("Smallest is %d\n" , i2);
+	    }	
+	 }
+	 	
+	   
+		
 	
 	
 } /* End of main */
