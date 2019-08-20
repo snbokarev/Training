@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(void) {
+int main() {
     int int1, int2;
 	printf ("Hello\nEnter your digits\n");
 	scanf ("%d%d", &int1,&int2);
