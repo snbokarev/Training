@@ -3,7 +3,7 @@
 int main () {
 
 	int rad;
-    printf ("Enter radius\n");
+    printf ("Enter radius here\n");
     scanf ("%d", &rad);
     
     printf ("Diameter is %d\n", 2*rad);
