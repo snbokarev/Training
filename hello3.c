@@ -16,5 +16,7 @@ int main() {
    if (int1==int2) {
    	printf ("These numbers are equal");
    }
+   
+   return 0;
 
 } /* End of main*/
