@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main () {
+int main () { /* Beginning of main*/
 
 	int rad;
     printf ("Enter radius here\n");

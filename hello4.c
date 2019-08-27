@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main () {
+int main () { /*Beginning of main */
 	
 	int i1 , i2 , i3;
 	
