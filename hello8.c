@@ -4,6 +4,7 @@
 int main() {
 
   printf ("Hi\n");
+  printf ("*****\n*   *\n*   *\n*   *\n*****\n");
 
   return 0;
 
