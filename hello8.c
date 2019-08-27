@@ -1,11 +1,17 @@
 #include <stdio.h>
 
+/* Starting main */
 int main() {
 
-printf ("Hi\n");
+  printf ("Hi\n");
 
-return 0;
+  return 0;
 
 
 
-}
+
+} /* Ending main*/
+
+
+
+
