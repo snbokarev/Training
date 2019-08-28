@@ -4,7 +4,7 @@
 
 int main() {
 	
-	printf ("Using of 8 printf operators");
+	printf ("Using of 8 printf operators\n");
 	printf (" * * * * * * * *\n");
 	printf ("* * * * * * * * \n");
 	printf (" * * * * * * * * \n");
