@@ -4,16 +4,19 @@
 
 int main() {
 	
-	printf (" ********\n");
-	printf ("********\n");
-	printf (" ********\n");
-	printf ("********\n");
-	printf (" ********\n");
-	printf ("********\n");
-	printf (" ********\n");
-	printf ("********\n");
+	printf ("Using of 8 printf operators");
+	printf (" * * * * * * * *\n");
+	printf ("* * * * * * * * \n");
+	printf (" * * * * * * * * \n");
+	printf ("* * * * * * * *\n");
+	printf (" * * * * * * * * \n");
+	printf ("* * * * * * * *\n");
+	printf (" * * * * * * * * \n");
+	printf ("* * * * * * * *\n\n");
 	
-	
+	printf ("Using of 1 printf operator\n");
+    printf (" * * * * * * * *\n* * * * * * * * \n * * * * * * * *\n* * * * * * * * \n * * * * * * * *\n* * * * * * * * \n * * * * * * * *\n* * * * * * * * \n");
+
 	return 0;
 	
 	
