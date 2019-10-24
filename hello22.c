@@ -45,6 +45,7 @@ int main () {
          if (nb > bt) 
             puts ("Treshold is exceeded!");
          
+         puts (" ");
          puts ("Enter account number (-1 to quit)");
          scanf ("%d", &acc);
          
@@ -56,7 +57,7 @@ int main () {
    else
    puts ("No values were entered");
    
-	
+	puts ("Program is over");
 	
 	
 	
