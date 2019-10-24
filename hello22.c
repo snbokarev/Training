@@ -53,11 +53,11 @@ int main () {
       } // end while
       
    	
-   } // end if
+   }
    else
-   puts ("No values were entered");
+   puts ("No values were entered");  // end if
    
-	puts ("Program is over");
+   puts ("Program is over");
 	
 	
 	
