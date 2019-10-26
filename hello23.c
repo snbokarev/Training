@@ -2,14 +2,14 @@
 
 /* It needs to obtain sales value and calculate
 employee's salary */
-
+#include <stdio.h>
 
 
 int main () {
 	
 	float sales ;
 	
-	puts ("Enter sales value ( -1 to quit )") ;
+	printf ("Enter sales value ( -1 to quit )\n") ;
 	scanf ("%f" , &sales);
 	
 	if ( sales >= 0 )  {
