@@ -1,4 +1,4 @@
-/* Program for exercise 3.23 */
+/* Program for exercise 3.24 */
 
 /* Find maximum from 10 vales input */
 
