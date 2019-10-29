@@ -7,21 +7,45 @@
 #include <stdio.h>
 
 int main () {
-   int counter , current , largest1 , largest2;
+   int counter , current , init1 , init2 , largest1 , largest2;
    
    puts ("Enter 1 value: ");
-   scanf ("%d" , &largest1);
+   scanf ("%d" , &init1);
    puts ("Enter 2 value: ");
-   scanf ("%d" , &largest2);
+   scanf ("%d" , &init2);
+   
+   if (init1 > init2) {
+      largest1 = init1;
+      largest2 = init2;
+   }
+
+   if (init1 < init2) {
+      largest1 = init2;
+      largest2 = init1;
+   }
+
+   if (init1 = init2) {
+      largest1 = init1;
+      largest2 = init1;
+   }
+      
+   
+   
    counter = 3;
    
    while ( counter <= 10 ) {
    	  printf ("Enter %d value: \n" , counter);
    	  scanf ("%d" , &current);
-   	  if ( current > largest1 )
+   	  
+      if ( current < largest1 && largest1 == largest2)
+         largest2 = current;
+                        
+      if ( current > largest1 )
          largest1 = current;
+
       if ( current < largest1 && current > largest2)
          largest2 = current;
+
    	  ++counter;
    } // End of While
 
