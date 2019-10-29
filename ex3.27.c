@@ -2,7 +2,7 @@
 
 /* Find maximum from 10 vales input */
 
-/* Input value, assign it to largest, use cycle to input values and compare it to largest. If current value is greater than largest, then addign the value to largest. Output largest. */
+/* Input value, assign it to largest, use cycle to input values and compare it to largest. If current value is greater than largest, then assign the value to largest. Output largest. */
 
 #include <stdio.h>
 
@@ -22,26 +22,25 @@ int main () {
    if (init1 < init2) {
       largest1 = init2;
       largest2 = init1;
-   }
-
-   if (init1 = init2) {
+   }   
+   else {
       largest1 = init1;
       largest2 = init1;
    }
-      
-   
-   
+        
    counter = 3;
    
    while ( counter <= 10 ) {
    	  printf ("Enter %d value: \n" , counter);
    	  scanf ("%d" , &current);
-   	  
-      if ( current < largest1 && largest1 == largest2)
+   	                                
+      if ( largest1 == largest2 && current < largest1)
          largest2 = current;
-                        
-      if ( current > largest1 )
+      
+      if ( current > largest1 ) {
+         largest2 = largest1;
          largest1 = current;
+      }
 
       if ( current < largest1 && current > largest2)
          largest2 = current;
@@ -50,7 +49,7 @@ int main () {
    } // End of While
 
    printf ("\nThe 1st maximum value is: %d" , largest1);
-   printf ("\nThe 2ns maximum value is: %d" , largest2);
+   printf ("\nThe 2nd maximum value is: %d" , largest2);
 	
    return 0;
 } // End of main
