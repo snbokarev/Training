@@ -14,7 +14,7 @@ int main () {
 	   while (size < 1 || size > 20 ) {
 	      
 	      puts ("Wrong input! Enter square size (1-20)");
-      	scanf ("%d" , &size);
+      	  scanf ("%d" , &size);
 	   	
 	   } // End of while
 		
@@ -25,7 +25,7 @@ int main () {
 	while ( count1 <= size ) { // While 1
 	   count2 = 1;
 	   while ( count2 <= size ) { // While 2
-	      printf ("*");
+	      printf ("* ");
 	      ++count2;	
 	   } // End of while 2
 	   
