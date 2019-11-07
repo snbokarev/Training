@@ -21,7 +21,7 @@ If n1 equals to n5 and n2 equals to n4, then entered value is polyndrom (symmetr
 
 int main () {
    int n1 , n2 , n3 , n4 , n5, dec , div , razr ;
-   int val ; 
+   unsigned int val ; 
 
    printf ("Enter 5-digit binary number\n");
    scanf ("%d", &val);
