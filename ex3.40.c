@@ -7,19 +7,20 @@
 int main () {
    int i = 1 , j = 1 ;
 
-   while (i <= 72) {
+   while (i < 72) {
       if (i % 9 == 0) {
          printf ("\n");
          ++j;
       }
-      ++i;
-      if (i % 10 == 0 && j % 2 == 0) {
+    
+      if (i % 9 == 0 && j % 2 == 0) {
          printf (" "); 
       }
       else
          printf ("* ");
+         // printf ("%d %d ", i , j); //DEBUG
 
-      
+      ++i;
 
    }
 
