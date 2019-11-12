@@ -36,7 +36,7 @@ int main () {
 	         printf ("This is triangle\n");
 	}
 	else
-	   printf ("This is not a trianyle\n");
+	   printf ("This is not a triangle\n");
 	
 	
 	   
