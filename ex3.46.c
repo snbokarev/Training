@@ -54,7 +54,8 @@ int main () {
     k3 = enc1;
     k4 = enc2;
     
-    
+    code = k1*1000 + k2*100 + k3*10 + k4;
+	printf ("\nEncoded string is: %d\n" , code);
 	
 	
 	
