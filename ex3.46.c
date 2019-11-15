@@ -9,6 +9,9 @@ int main () {
 	int val , code , bit1 , bit2 , bit3 , bit4;
 	int enc1, enc2, enc3, enc4, k1, k2, k3, k4;
 	int i = 1 , bitness = 0;
+	
+	// ------- Encoding part
+	
 	printf ("Enter 4 bit value\n");
 	scanf ("%d", &val);
 	
@@ -19,7 +22,7 @@ int main () {
 	   bitness += 1;	
 	} // End of While 0
 	
-	while ( bitness != 4) { // While 1
+	while ( bitness > 4) { // While 1
 		printf ("%d is %d bit value. Enter 4 bit value\n" , val, bitness);
 		scanf ("%d", &val);
 		
@@ -47,7 +50,7 @@ int main () {
     enc4 = (bit4 + 7)%10;
     
     printf ("Encoded digits are: %d, %d, %d, %d\n" , enc1, enc2, enc3, enc4);
-    printf ("Encoded string is: %d%d%d%d\n" , enc3, enc4, enc1, enc2);
+    printf ("\nEncoded string is: %d%d%d%d\n" , enc3, enc4, enc1, enc2);
     
     k1 = enc3;
     k2 = enc4;
@@ -55,7 +58,38 @@ int main () {
     k4 = enc2;
     
     code = k1*1000 + k2*100 + k3*10 + k4;
-	printf ("\nEncoded string is: %d\n" , code);
+	printf ("Encoded message is: %d\n" , code);
+
+	// ------- Decoding part
+	printf ("\nEnter encoded message: \n");
+	scanf ("%d" , &val);
+
+	printf ("Encoded: %d\n" , val); //DEBUG
+
+    bit1 = val/1000;
+    bit2 = val%1000/100;
+    bit3 = val%1000%100/10;
+    bit4 = val%1000%100%10;
+    
+    printf ("\nDigits of the value are: %d, %d, %d, %d\n" , bit1, bit2, bit3, bit4); 
+
+    enc1 = (bit1 + 3)%10;
+    enc2 = (bit2 + 3)%10;
+    enc3 = (bit3 + 3)%10;
+    enc4 = (bit4 + 3)%10;
+
+	printf ("Decoded digits are: %d, %d, %d, %d\n" , enc1, enc2, enc3, enc4);
+    printf ("\nDecoded string is: %d%d%d%d\n" , enc3, enc4, enc1, enc2);
+
+    k1 = enc3;
+    k2 = enc4;
+    k3 = enc1;
+    k4 = enc2;
+    
+    code = k1*1000 + k2*100 + k3*10 + k4;
+	printf ("Decoded message is: %d\n" , code);
+
+
 	
 	
 	
