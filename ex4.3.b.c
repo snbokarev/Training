@@ -8,7 +8,7 @@ int main () {
 	 
 	 float i = 333.546372;
 	 
-	 printf ("%15.1f\n" , i) ;
+	 printf ("%25.1f\n" , i) ;
 	 printf ("%.2f\n" , i) ;
 	 printf ("%15.3f\n" , i) ;
 	 printf ("%.4f\n" , i) ;
