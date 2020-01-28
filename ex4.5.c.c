@@ -7,10 +7,15 @@
 int main () {
 	
 	int intVal;
-	char charVal;
+	int charVal;
 	
-	scanf ("%d" , &intVal);
-	charVal = getchar ();
+    scanf ("%d" , &intVal);
+    
+    intVal = getchar();
+	charVal = getchar();
+	//scanf ("%d" , &charVal);
+	
+	//scanf ("%d%*c%c" , &intVal, &charVal);
 	
 	printf ("Integer: %d\nChar: %c\n" , intVal , charVal);
 	
