@@ -1,4 +1,4 @@
-/* Program for 4.17 */
+/* Program for 4.18 */
 
 /* It needs to read 5 numbers between 1 and 30 and then output stars according to numbers */
 
