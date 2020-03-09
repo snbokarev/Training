@@ -37,7 +37,7 @@ int main() {
 		
 	   div+=2;
 		
-	}
+	} //End of if
 	
 	printf ("\n3.14 met on %d member\n" , a);
 	printf ("\n3.141 met on %d member\n" , b);
