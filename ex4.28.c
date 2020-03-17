@@ -5,8 +5,8 @@
 #include <stdio.h>
 
 int main () {
-	int code = 0 , week, hour , count1 = 0, count2 = 0 , count3 , count4;
-	float sal_week , sal_hour ,  sum1=0 , sum2 = 0 , sum2_int, sum3 , sum4, out;
+	int code = 0 , week, hour , item , count1 = 0, count2 = 0 , count3 = 0 , count4 = 0;
+	float sal_week , sal_hour ,  sal_item , sales , sum1=0 , sum2 = 0 , sum2_int = 0 , sum3 = 0 , sum4 = 0 , out;
 	
        while (code != -1) {
        	printf ("%s\n" , "Enter employee's code. To finish enter \"-1\"");
@@ -59,10 +59,32 @@ int main () {
 	             ++count2;
 	             sum2_int = 0;
    	          break; // End of case 2
-	          
-	          	
-	       
-	       
+   	          
+   	       case 3: 
+   	          printf ("%s\n" , "How many weeks the employee worked?");
+   	          scanf ("%d" , &week);
+   	          printf ("%s\n" , "Enter sales value:");
+   	          scanf ("%f" , &sales);
+	             out = (float) 250*week + sales*0.057;
+	              printf ("The employee's salary is %.2f\n\n" , out);
+	             sum3+=out;
+	             ++count3;
+	             break; // End of case 3
+	             
+	          case 4:
+	             printf ("%s\n" , "How many items the employee has produced?");
+	             scanf ("%d" , &item);
+	             printf ("%s\n" , "Enter salary per item");
+	             scanf ("%f" , &sal_item);
+	             out = (float)item*sal_item;
+	             printf ("The employee's salary is %.2f\n\n" , out);
+	             sum4+=out;
+	             ++count4;
+	             break; // End of case 4
+	             
+	          default:
+	             printf ("%s\n\n" , "Wrong input, the code has to be in 1 - 4 range, try again");
+	             break; // End of default       	     	       
 	       	
 	       } // End of switch    	
        } //End of while
@@ -73,7 +95,15 @@ int main () {
     if (count2 >= 1) {
     	printf ( "Total salary of %d employee(s) with code 2 is: %.2f\n" , count2 , sum2);	
     }
-  
+    if (count3 >= 1) {
+    	printf ( "Total salary of %d employee(s) with code 3 is: %.2f\n" , count3, sum3);	
+    }
+    if (count4 >= 1) {
+    	printf ( "Total salary of %d employee(s) with code 3 is: %.2f\n" , count4, sum4);	
+    }
+    printf ( "\nTotal employees processed: %d\n" ,  count1 + count2 + count3 + count4);
+    printf ("Total salary: %.2f\n" , sum1 + sum2 + sum3 + sum4);
+    
     
     return 0;
 	
