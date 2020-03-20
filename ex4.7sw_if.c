@@ -14,17 +14,14 @@ int main () {
 	while (grade != '1') {
 		scanf ("%1s" , &grade);
 		if (grade  != '1')   {
-			
 		
-		
-		
-	   	if (!(grade == 'A' || grade == 'a') && !(grade == 'B' || grade == 'b') && !(grade == 'C' || grade == 'c') && !(grade == 'D' || grade == 'd' ) && !(grade == 'E' || grade == 'e') && !(grade == 'F' || grade == 'f') && !(grade == '1')) {
-		   	printf ("%s\n" , "Incorrect input.");
-   		    printf ("%s\n" , "Enter again.");
-   		 } // End of if */
+	   	if (!(grade == 'A' || grade == 'a' || grade == 'B' || grade == 'b' || grade == 'C' || grade == 'c' ||grade == 'D' || grade == 'd' || grade == 'E' || grade == 'e' || grade == 'F' || grade == 'f' || grade == '1')) {
+		   	printf ("\n%c is incorrect input.\n" , grade);
+   		    printf ("%s\n\n" , "Enter again.");
+   		 } // End of if
 		 
-		   printf ("\nIs it A or a? : %d\n" , grade == 'A' || grade == 'a');
-		   printf ("Grade = %c\n" , grade);
+	/*	   printf ("\nIs it A or a? : %d\n" , grade == 'A' || grade == 'a');
+		   printf ("Grade = %c\n" , grade); */
 		
 	   	if (grade == 'A' || grade == 'a')
 	   	   ++aCount;
