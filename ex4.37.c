@@ -17,7 +17,7 @@ int main () {
 	printf ("\nThe loop is broken at %d\n" , x);
 	
 	for (x = 1 ; x <= 10 ; x++) {
-		if (x != 5)
+		if (x != 7)
 	   	printf ("%d" , x);
 	    else {
 	       y = x;
@@ -27,6 +27,25 @@ int main () {
 	
 	printf ("\nThe loop is broken at %d\n" , y);
 	
+	for (x = 1 ; x <= 10 ; ++x) {
+		if (x == 5) {
+			y = x;
+		   continue;
+		}
+		printf ("%d" , x);		
+	} // End of for
+	
+	printf ("\nThe loop is skipped at %d\n" , y);
+	
+		for (x = 1 ; x <= 10 ; ++x) {
+		if (x != 7) 
+		   printf ("%d" , x);
+		else {
+		   y = x;
+		}
+	} // End of for
+	
+	printf ("\nThe loop is skipped at %d\n" , y);
 	
 	
 	return 0;
