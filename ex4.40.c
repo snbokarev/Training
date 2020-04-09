@@ -57,7 +57,7 @@ int main () {
 				printf ("%s\n" , "Exiting...");
 	 		}
     		} else {
-    		  printf (" VALUE IS %d\n" , grade);
+    		  printf (" VALUE IS %c\n" , grade);
     		  printf ("%s\n" , "Incorrect input.");
 		      printf ("%s\n" , "Enter again.");
     		}
