@@ -20,4 +20,5 @@ int main () { // Main function
 /* Definition of function */
 int square (int y) {
 	return y*y;
-}
+	
+} // End of square
