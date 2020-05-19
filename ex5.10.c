@@ -11,7 +11,13 @@ main()
 	printf ("%s\n" , "Enter value");
 	scanf ("%lf" , &x);
 	
-	printf ("Original: %.2lf \tRounded: %.2lf\n" , x , floor(x + .5));
+	while (x != -1) {	
 	
+   	printf ("Original: %.2lf \tRounded: %.2lf\n\n" , x , floor(x + .5));
+   	
+   	printf ("%s\n" , "Enter value");
+	   scanf ("%lf" , &x);
+	   
+	} // End of while
 	
 } // End of main
