@@ -9,12 +9,13 @@ main()
 {
 	int side;
 	printf ("%s\n" , "Enter the quadrate side size");
-	scanf ("%d" , side);
+	scanf ("%d" , &side);
 	
 	printf ("%s\n" , "The quadrate is:");
+	
 	quad(side);
 	
-	
+	return 0;
 } // End of main
 
 void quad (int x)
