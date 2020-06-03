@@ -34,7 +34,7 @@ main ()
 int perfect (int val) // Definition of perfect
 {
 	int sum = 0;
-	for (int j = 1; j < val; ++j)
+	for (int j = 1; j <= val/2; ++j)
 		{
 			if (val % j == 0)
 			   sum += j;
