@@ -17,6 +17,8 @@ main ()
     
     if (max >= 2)
        printf ("%d\n" , 2);
+    else
+       printf ("%s\n" , "None");
 
 	for (int j = 1; j <= max; j +=2)
 	{
