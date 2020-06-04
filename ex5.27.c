@@ -12,9 +12,13 @@ main ()
 	
 	printf ("%s\n" , "Enter maximum value");
 	scanf ("%d" , &max);
-	 puts("1");
-	 puts ("2");
-	for (int j = 3; j <= max; j +=2)
+
+    printf ("\n%s\n" ,"The prime numbers are: ");
+    
+    if (max >= 2)
+       printf ("%d\n" , 2);
+
+	for (int j = 1; j <= max; j +=2)
 	{
 		if (isSimple(j) == 1)
 		   printf ("%d\n" , j);
@@ -26,6 +30,7 @@ main ()
 int isSimple (int val)
 {
 	int s = 0;
+	
 	for (int i = 1; i <= val/2; ++i)
 //	for (int i = 1; i < val; ++i)
 //	for (int i = 1; i <= sqrt(i); ++i)
@@ -33,9 +38,10 @@ int isSimple (int val)
 		if (val % i == 0)
 		   s += 1;
 	} // end of for
-	if (s <= 1)
+	if (s == 1)
 	   return 1;
 	else
 	   return 0;
+	   
 	
 } // End of isSimple
