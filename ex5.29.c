@@ -1,9 +1,10 @@
 /* Program for 5.29 */
-/* It needs to find grand common devider (create function) for 2 integers */
+/* It needs to find grand common divider (create function) for 2 integers */
 
 #include <stdio.h>
 
 int gcd(int, int) ; // Prototype of gcd
+int gcd_div(int, int); // Prototype of gcd_div
 
 main()
 {
@@ -12,6 +13,7 @@ main()
 	scanf ("%d%d" , &val1 , &val2);
 	
 	printf ("The grand common divider is: %d\n" , gcd (val1 , val2));
+	printf ("The grand common divider is: %d\n" , gcd_div (val1 , val2));
 	
 	return 0;
 	
@@ -39,4 +41,18 @@ int gcd(int x, int y) // definition of gcd
 	
 	return less;
 		
-} // End of definition
+} // End of definition of gcd
+
+int gcd_div (int x , int y)
+{
+	while (x != 0 && y != 0)
+	{
+		if (x > y)
+		   x %= y;
+		else
+		   y %= x;
+	} // end of while
+	
+	return x + y;
+	
+} // End of definition of gcd_div
