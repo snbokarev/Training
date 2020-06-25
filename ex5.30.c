@@ -9,7 +9,7 @@ main()
 {
 	int points;
 	
-	printf ("%s\n" , "Enter points value (0 - 100");
+	printf ("%s\n" , "Enter points value (0 - 100)");
 	scanf ("%d" , &points);
 	
 	while (points < 0 || points > 100)
