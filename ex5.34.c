@@ -75,11 +75,11 @@ main ()
 		
 	} // end of while total != 10
 	
-	if ((float)(total - incorrect)/total < 0.75)
+	if (100 * (total - incorrect)/total < 75)
 	{
-		printf ("You have to train more, just %.0f%% of correct answers\n" , (float)(total - incorrect)/total * 100);
+		printf ("You have to train more, just %d%% of answers are correct\n" , 100 * (total - incorrect)/total);
 	} else {
-		printf ("You passed the test, %.0f%% of correct answers\n" , (float)(total - incorrect)/total * 100);
+		printf ("You passed the test, %d%% answers are correct\n" , 100 * (total - incorrect)/total);
 	};
 	
 	puts ("Finishing program");
