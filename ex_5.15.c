@@ -36,7 +36,7 @@ long fibonacci2 (long number) {
 			c =  a + b;
 			a = b;
 			b = c;
-		} // End of if	
+		} // End of for
 		return c;	
 	} // End of else
 } // End of fibonacci2 function definition
