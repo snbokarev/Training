@@ -32,11 +32,15 @@ main () {
 } // End of main
 
 void hanoi (int q , int from , int to , int buf) {
+	static int count = 0;
+	++count;
+	printf ("Step %d q=%d " , count, q);
 	if ( q != 0 )
 	{
+		
 		hanoi (q - 1 , from , buf , to );
 		
-		printf ("Move from %d to %d\n" , from , to);
+		printf ("Move from %d to %d\n",  from , to);
 		
 		hanoi (q - 1 , buf , to , from);
 		
