@@ -38,10 +38,13 @@ void hanoi (int q , int from , int to , int buf) {
 	if ( q != 0 )
 	{
 		
+		// Move q-1 disks  from source to buffer
 		hanoi (q - 1 , from , buf , to );
 		
+		// Move disk #q from source to destination
 		printf ("Move from %d to %d\n",  from , to);
 		
+		// Move q-1 disks from buffer to destination
 		hanoi (q - 1 , buf , to , from);
 		
 	} // end of if
