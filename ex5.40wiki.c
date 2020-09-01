@@ -9,14 +9,17 @@ void carryingOver(int, int, int);
 main() 
 { 
    int number, countDisk, counter = 1, count;
-   printf("Введите количество дисков: ");
+   
+   printf("%s\n", "Введите количество дисков: ");
    scanf("%d", &number); 
+   
    while (counter <= pow(2, number) - 1) { /* Запускаем цикл повторений */ 
       if (counter % 2 != 0) { /* На нечетном ходу мы будем трогать только самый маленький диск */ 
           printf("%3d %d ", counter, 1);
           carryingOver(number, counter, 1); /* С помощью этой функции определяем для данного диска перемещение */ 
           } else { /* Определяем диск который нужно переместить на четном ходу */ 
-          count = counter; countDisk = 0; 
+          count = counter; 
+          countDisk = 0; 
           while (count % 2 == 0) { /* Диск который нужно переместить */ 
               countDisk++; /* будет числом деления номера хода на 2 без остатка */ 
               count = count / 2;
@@ -34,7 +37,7 @@ void carryingOver(int n ,int i, int k)
 { 
     int t, axisX, axisY, axisZ; 
     if (n % 2 == 0) { /* Определяем порядок осей в зависимости от четности */ 
-        axisX = 1; /* и не четности количества дисков */ 
+        axisX = 1; /* и нечетности количества дисков */ 
         axisY = 2; 
         axisZ = 3; 
     } else { 
