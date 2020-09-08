@@ -104,6 +104,7 @@ main ()
 		        printf ("The result of division %d and %d is (answer in x.x format):\n" , val1 , val2);
 		        scanf("%lf" , &userResult_float);
 		        compResult_float = roundToTenth((double)val1 / val2);
+	        	// To correctly compare floats we have to get absolute value of difference and compate it with some "epsilon" (precision)
 	        	if (!(fabs(userResult_float - compResult_float) < 0.0000000001))
 	        	{
 		        	++incorrect;
