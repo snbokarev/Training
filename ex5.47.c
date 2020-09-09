@@ -17,6 +17,7 @@ main()
 	
 } // End of main
 
+// b can be positive only
 int mystery(int a, int b)
 {
 	if (b == 1)
