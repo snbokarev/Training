@@ -5,12 +5,16 @@
 
 main()
 {
-	int c;
+	//char c; // uncomment to use with scanf
+	int c; // uncomment to use with getchar
 	int static count = 0;
 	++count;
 	printf("Step %d\n", count);
 	
-	if ((c = getchar()) != '.') {
+	//scanf(" %c", &c); // uncomment to use with scanf
+	
+	//if (c  != '.') { // uncomment to use with scanf
+	if ((c = getchar()) != '.') { // uncomment to use with getchar
 		main();
 		printf("%c\n", c);
 		
