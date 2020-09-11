@@ -13,16 +13,16 @@ main () {
 	
 	sum = rollDice();
 	
-	switch (sum) {
-		case 7: case 11:
+	switch (sum) { // Results of the first cast
+		case 7: case 11: // Player wins after first cast
 		   code = 1;
 		   break;
 		   
-		case 2: case 3: case 12:
+		case 2: case 3: case 12: // Player loses after first cast
 		   code = 2;
 		   break;
 		   
-		default:
+		default: // Count points
 		   code = 0;
 		   points = sum;
 		   printf ("Current points are: %d\n" , points);
@@ -32,7 +32,7 @@ main () {
 	while (code == 0) {
 		sum = rollDice();
 		if (sum == points) { // Start of if
-			code = 1;
+			code = 1; // Player reproduced result of the first cast
 		} else {
 			if (sum == 7) {
 				code = 2;
