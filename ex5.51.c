@@ -16,6 +16,7 @@ void phraseAgain(void);
 void phraseEnterRate(void);
 void phraseCorrectRate(int);
 void phraseCombo(int);
+void phraseThanksRate(int, int);
 
 main () {
    int bankBalance = 1000, userRate, gameStatus;
@@ -37,8 +38,7 @@ main () {
        	scanf("%d", &userRate);
        } // end of while rate > balance
        
-       if (userRate == bankBalance)
-          printf("%s\n", "Oh, you do va-bank!");
+       phraseThanksRate(userRate, bankBalance);
        
        gameStatus = game(); // Lets go
        
@@ -327,3 +327,50 @@ void phraseCombo(int winCount)
 	} // end of switch
 	
 } // End of phraseCombo
+
+void phraseThanksRate(int rate, int balance)
+{
+	int option;
+	option = 1 + rand() % 4;
+	if (rate == balance) {
+		switch(option) {
+		case 1:
+		printf("%s\n", "Oh, you do va-bank!");
+		break;
+		
+		case 2:
+		printf("%s\n", "Va-bank? Respect!");
+		break;
+		
+		case 3:
+		printf("%s\n", "Va-bank! Let's risk!");
+		break;
+		
+		case 4:
+		printf("%s\n", "Who never risks, never drinks champagne!");
+		break;
+	} // end of switch
+		
+	} else {
+		switch(option) {
+		case 1:
+		printf("%s\n", "Thanks, throw your dies!");
+		break;
+		
+		case 2:
+		printf("%s\n", "Ok, let's play!");
+		break;
+		
+		case 3:
+		printf("%s\n", "Bets are made!");
+		break;
+		
+		case 4:
+		printf("%s\n", "Let's go!");
+		break;
+	} // end of switch
+		
+	} // End of if rate = balance
+	
+	
+} // End of phraseThanksRate
