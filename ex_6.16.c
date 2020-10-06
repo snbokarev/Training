@@ -14,7 +14,7 @@ main()
 {
 	int frequency[10] = {},
 	      response[SIZE] = {5, 7, 3, 8, 9, 2, 3, 8, 1, 6,
-	                                        7, 6, 1, 3, 5, 9, 1, 7, 8, 3,
+	                                        7, 6, 3, 3, 5, 9, 1, 7, 8, 3,
 	                                        6, 3, 9, 2, 7, 1, 6, 3, 4, 9,
 	                                        9, 7, 3, 5, 6, 2, 9, 3, 1, 7,
 	                                        7, 9, 1, 7, 2, 4, 8, 9, 5, 1,
@@ -73,7 +73,7 @@ void mode(int freq[], int answer[])
 	for (j = 0; j <= SIZE - 1; j++)
 	    ++freq[answer[j]];
 	    
-	printf("%s%11s%19s\n\n%54s\n%54s\n\n", "Response", "Frequency", "Histogram", "1   1   2   2", "5   0   5   0   5");
+	printf("%s%11s%19s\n\n%54s\n%54s\n\n", "Response", "Frequency", "Histogram", "1    1    2    2", "5    0    5    0    5");
 	
 	for (rating = 1; rating <= 9; rating++) {
 	    printf("%8d%11d          ", rating, freq[rating]);
